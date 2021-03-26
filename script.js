@@ -16,7 +16,7 @@ function calculate () {
   secondNumber = parseInt(secondNumber)
   answer = 0
   negative = false
-
+  // If inputs are negative, switch signs to negative.
   if (firstNumber < 0) {
     negative = !negative 
     firstNumber = Math.abs(firstNumber)
@@ -25,12 +25,13 @@ function calculate () {
     negative = !negative
     secondNumber = Math.abs(secondNumber)
   }
-
+  // Loops the answer.
   for (counter = 0; counter <firstNumber; counter++) {
     answer = answer + secondNumber
   }
   if (negative) {
   answer = 0 - answer
   }
-document.getElementById('answer').innerHTML = answer
+  // Displays answer.
+  document.getElementById('answer').innerHTML = answer
 }
