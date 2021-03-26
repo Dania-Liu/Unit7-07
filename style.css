@@ -1,0 +1,19 @@
+#background {
+  background-color: yellowgreen;
+}
+
+#header {
+  text-align: center;
+  color: white;
+  font-size: 200%;
+}
+
+#image {
+  float: right;
+  width: 25%;
+  height: 25%;
+}
+
+.text {
+  color: white;
+}
